@@ -1,0 +1,4 @@
+[etcd]
+etcd-1  etcdname=etcd1
+etcd-2  etcdname=etcd2
+etcd-3  etcdname=etcd3
