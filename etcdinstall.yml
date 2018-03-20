@@ -1,0 +1,17 @@
+---
+- hosts: etcd
+  #vars:
+  #  etcdcluster: 
+      #- "{ "{{ groups['etcd'][0] }}":"{{ hostvars[groups.etcd[0]].ansible_eth0.ipv4.address }}" }"
+  #    - { "{{ groups['etcd'][0] }}":"a" }
+      #- "{ "{{ groups['etcd'][1] }}":"{{ hostvars[groups.etcd[1]].ansible_eth0.ipv4.address }}" }"
+      #- "{ "{{ groups['etcd'][2] }}":"{{ hostvars[groups.etcd[2]].ansible_eth0.ipv4.address }}" }"
+  roles:
+    - etcd
+  #tasks:
+  #  # - debug: var=etcdcluster
+  #  #- shell: | 
+  #  - debug: var= "{{ hostvars['item'].ansible_eth0.ipv4.address }}"
+  #    with_items: "{{ groups.all }} "
+  #    delegate_to: localhost
+    
